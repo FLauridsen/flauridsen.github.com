@@ -20,7 +20,7 @@ include('source/fthelpers.php');
 function format_address($street, $city, $state, $zip) {
 	
 	$result = str_replace(" ", "&nbsp;", $street);
-	$result = $result . "<br />$city, $state $zip";
+	$result = $result . "<br />" . $city . ", " . $state . " " . $zip;
 	return $result;
 }
 
