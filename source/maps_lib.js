@@ -108,8 +108,6 @@ var MapsLib = {
     if ( $("#cbType2").is(':checked')) tempWhereClause.push("Kun for ansatte");
     whereClause += " AND " + type_column + " IN ('" + tempWhereClause.join('ed590116136c03404bbb96b98415c11d6990cb04#39;,ed590116136c03404bbb96b98415c11d6990cb04#39;') + "')";
 
-    whereClause += " AND 'Dato' >= '" + $("#age-selected-start").html() + "'";
-    whereClause += " AND 'Dato' <= '" + $("#age-selected-end").html() + "'";
 
     //-------end of custom filters--------
 
