@@ -21,9 +21,9 @@
       <div class='navbar-inner'>
         <div class='container'>
           <a class='brand' href='/'>Kort over mobile blodbanker i Region Hovedstaden</a>
-        </div>
-      </div>
-    </div>
+        </div> <!---end navbar--->
+      </div> <!---end navbar-inner--->
+    </div> <!---end container--->
     <div class='container-fluid'>
       <div class='row-fluid'>
         <div class='span4'>
@@ -43,13 +43,11 @@
             </label>
             <input class='btn btn-primary' id='search' type='button' value='Søg' />
             <button class='btn' id='reset'>Nulstil</button>
-          </div>
+          </div> <!---end well1--->
           <div class='well'>
             <!-- Once you decide what filter you want, place the HTML code here. The section in the maps_lib.js is also marked. Once you're done, feel free to delete this explanatory section.-->
            
-            <h4>
-              Sorter efter tilgængelighed
-            </h4>
+            <h4>Sorter efter tilgængelighed</h4>
             <ul class='inputs-list unstyled'>
               <li>
                 <label class='checkbox inline'>
@@ -66,17 +64,15 @@
                 </label>
               </li>
             </ul>
-          </div>  
-        </div>  
-      </div>  
-      <p class='alert alert-info lead' id='result_count'></p>  
-    </div>  
-    <div class='span8'>  
-    <div id='map_canvas'></div>  
-    </div>  
-  </div>  
-</div> 
+          </div> <!---end well2--->
 
+        </div> <!---end span4--->  
+      </div> <!---end row-fluid--->  
+      <p class='alert alert-info lead' id='result_count'></p>  
+    </div> <!---container-fluid--->  
+    <div class='span8'>  
+      <div id='map_canvas'></div>  
+    </div> <!---end span8--->  
 
 
     <script type="text/javascript" src="source/jquery.js"></script>
