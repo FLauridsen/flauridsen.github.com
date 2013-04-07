@@ -235,7 +235,7 @@ var MapsLib = {
     if (numRows == 1)
     name = MapsLib.recordName;
     $( "#result_count" ).fadeOut(function() {
-        $( "#result_count" ).html(MapsLib.addCommas(numRows) + " " + name + " found");
+        $( "#result_count" ).html(MapsLib.addCommas(numRows) + " " + name + " fundet");
       });
     $( "#result_count" ).fadeIn();
   },
