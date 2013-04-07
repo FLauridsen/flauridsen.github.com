@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang='en'>
   <head>
-    <title>Searchable Map Template Demo</title>
+    <title>Kort over mobile blodbanker i Region Hovedstaden</title>
     <meta charset='utf-8' />
     <meta content='width=device-width, initial-scale=1.0' name='viewport' />
     <meta content='' name='description' />
@@ -47,23 +47,23 @@
           <div class='well'>
             <!-- Once you decide what filter you want, place the HTML code here. The section in the maps_lib.js is also marked. Once you're done, feel free to delete this explanatory section.-->
            
-            <h4>Custom filters and views</h4>
-            <p>Take a look at the <a href='https://github.com/derekeder/FusionTable-Map-Template/wiki/Filter-examples'>wiki</a> to see how to add your own custom filters and views like:</p>
             <div class='row-fluid'>
               <div class='span6'>
-                <ul>
-                  <li><a href='https://github.com/derekeder/FusionTable-Map-Template/wiki/Filter-examples#wiki-checkboxes'>Checkboxes</a></li>
-                  <li><a href='https://github.com/derekeder/FusionTable-Map-Template/wiki/Filter-examples#wiki-radiobuttons'>Radio buttons</a></li>
-                  <li><a href='https://github.com/derekeder/FusionTable-Map-Template/wiki/Filter-examples#wiki-drop-down-lists'>Drop down lists</a></li>
-                  <li><a href='https://github.com/derekeder/FusionTable-Map-Template/wiki/Filter-examples#wiki-textsearches'>Text searches</a></li>
-                </ul>
-              </div>
-              <div class='span6'>
-                <ul>
-                  <li><a href='https://github.com/derekeder/FusionTable-Map-Template/wiki/Filter-examples#wiki-sliders'>Sliders</a></li>
-                  <li><a href='https://github.com/derekeder/FusionTable-Map-Template/wiki/Filter-examples#wiki-date-sliders'>Date sliders</a></li>
-                  <li><a href='https://github.com/derekeder/FusionTable-Map-Template/wiki/List-search-results'>Results lists</a></li>
-                </ul>
+                <ul class='inputs-list unstyled'>
+                  <li>
+                    <label class='checkbox inline'>
+                      <input type='checkbox' id='cbType1' />
+                      <span class='filter-box filter-blue'></span>
+                      City drop-off location
+                    </label>
+                  </li>
+                  <li>
+                    <label class='checkbox inline'>
+                      <input type='checkbox' id='cbType2' />
+                      <span class='filter-box filter-green'></span>
+                      Private business
+                    </label>
+                  </li>
               </div>
             </div>
           </div>
