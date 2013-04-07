@@ -85,7 +85,7 @@ var MapsLib = {
     var whereClause = MapsLib.locationColumn + " not equal to ''";
 
     //-----custom filters-------
-    var type_column = "'type'";
+    var type_column = "'Tilgængelighed'";
     var tempWhereClause = [];
     if ( $("#cbType1").is(':checked')) tempWhereClause.push("Offentlig");
     if ( $("#cbType2").is(':checked')) tempWhereClause.push("Kun for ansatte");
