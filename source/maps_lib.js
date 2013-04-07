@@ -71,6 +71,23 @@ var MapsLib = {
     
     //-----custom initializers-------
    
+    $("#age-slider").slider({
+        orientation: "horizontal",
+        range: true,
+        min: Apr 2,
+        max: Dec 31,
+        values: [Apr 2, Dec 31],
+        step: 5,
+        slide: function (event, ui) {
+            $("#age-selected-start").html(ui.values[0]);
+            $("#age-selected-end").html(ui.values[1]);
+        },
+        stop: function(event, ui) {
+          MapsLib.doSearch();
+        }
+    });
+
+
     //-----end of custom initializers-------
 
     //run the default search
@@ -90,6 +107,9 @@ var MapsLib = {
     if ( $("#cbType1").is(':checked')) tempWhereClause.push("Offentlig");
     if ( $("#cbType2").is(':checked')) tempWhereClause.push("Kun for ansatte");
     whereClause += " AND " + type_column + " IN ('" + tempWhereClause.join('ed590116136c03404bbb96b98415c11d6990cb04#39;,ed590116136c03404bbb96b98415c11d6990cb04#39;') + "')";
+
+    whereClause += " AND 'Dato' >= '" + $("#age-selected-start").html() + "'";
+    whereClause += " AND 'Dato' <= '" + $("#age-selected-end").html() + "'";
 
 
     //-------end of custom filters--------
