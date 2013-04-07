@@ -31,8 +31,8 @@ var MapsLib = {
 
   map_centroid:       new google.maps.LatLng(55.754941, 12.420044), //center that your map defaults to
   locationScope:      "Denmark",      //geographical area appended to all address searches
-  recordName:         "resultat",       //for showing number of results
-  recordNamePlural:   "resultater",
+  recordName:         "blodbank",       //for showing number of results
+  recordNamePlural:   "blodbanker",
 
   searchRadius:       805,            //in meters ~ 1/2 mile
   defaultZoom:        9,             //zoom level when map is loaded (bigger is more zoomed in)
