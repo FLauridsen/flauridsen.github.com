@@ -31,11 +31,11 @@ var MapsLib = {
 
   map_centroid:       new google.maps.LatLng(55.754941, 12.420044), //center that your map defaults to
   locationScope:      "Denmark",      //geographical area appended to all address searches
-  recordName:         "result",       //for showing number of results
-  recordNamePlural:   "results",
+  recordName:         "resultat",       //for showing number of results
+  recordNamePlural:   "resultater",
 
   searchRadius:       805,            //in meters ~ 1/2 mile
-  defaultZoom:        11,             //zoom level when map is loaded (bigger is more zoomed in)
+  defaultZoom:        9,             //zoom level when map is loaded (bigger is more zoomed in)
   addrMarkerImage: 'http://derekeder.com/images/icons/blue-pushpin.png',
   currentPinpoint: null,
 
