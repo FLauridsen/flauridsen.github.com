@@ -20,29 +20,28 @@
     <div class='navbar'>
       <div class='navbar-inner'>
         <div class='container'>
-          <a class='brand' href='/'>Searchable Map Template</a>
+          <a class='brand' href='/'>Kort over mobile blodbanker i Region Hovedstaden</a>
         </div>
       </div>
     </div>
     <div class='container-fluid'>
       <div class='row-fluid'>
         <div class='span4'>
-          <p>This is a demo of <a href='http://derekeder.com'>Derek Eder's</a> <a href='http://derekeder.com/searchable_map_template/'>Searchable Map Template</a> using Google <a href='http://support.google.com/fusiontables/answer/2571232?hl=en&ref_topic=1652595'>Fusion Tables</a>. Use this section to give a little context your map. Maybe a link to <a href='#'>read more &raquo;</a></p>
+          <p>Denne oversigt viser hvor du kan finde din nærmeste blodbank. De blå prikker viser offentlige tappesteder og de grønne er kun for ansatte på det pågældende sted.</p>
           <div class='well'>
             <h4>
-              Address <small>(<a id='find_me' href='#'>find me</a>)</small>
+              Adresse <small>(<a id='find_me' href='#'>find mig</a>)</small>
             </h4>
-            <input class='input-block-level' id='search_address' placeholder='Enter an address or an intersection' type='text' />
+            <input class='input-block-level' id='search_address' placeholder='Indtast en adresse' type='text' />
             <label>
-              within
+              inden for
               <select class='input-small' id='search_radius'>
-                <option value='400'>2 blocks</option>
-                <option value='805'>1/2 mile</option>
-                <option value='1610'>1 mile</option>
-                <option value='3220'>2 miles</option>
+                <option value='1000'>1 km</option>
+                <option value='2500'>2,5 km</option>
+                <option value='5000'>5 km</option>
               </select>
             </label>
-            <input class='btn btn-primary' id='search' type='button' value='Search' />
+            <input class='btn btn-primary' id='search' type='button' value='Søg' />
             <button class='btn' id='reset'>Reset</button>
           </div>
           <div class='well'>
