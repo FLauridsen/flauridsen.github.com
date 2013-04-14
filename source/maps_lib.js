@@ -18,7 +18,7 @@ var MapsLib = {
 
   //the encrypted Table ID of your Fusion Table (found under File => About)
   //NOTE: numeric IDs will be depricated soon
-  fusionTableId:      "1hHmhIzp3h8S0BNJ7hA2Je2GogrTEFq4JZTm8J9Y",
+  fusionTableId:      "1sRc1eXGz4_10MfOPpCgbvlPAxH1IIc3l8NfBVwM",
 
   //*New Fusion Tables Requirement* API key. found at https://code.google.com/apis/console/
   //*Important* this key is for demonstration purposes. please register your own.
@@ -27,7 +27,7 @@ var MapsLib = {
   //name of the location column in your Fusion Table.
   //NOTE: if your location column name has spaces in it, surround it with single quotes
   //example: locationColumn:     "'my location'",
-  locationColumn:     "Adresse",
+  locationColumn:     "fuld adresse",
 
   map_centroid:       new google.maps.LatLng(55.754941, 12.420044), //center that your map defaults to
   locationScope:      "Denmark",      //geographical area appended to all address searches
