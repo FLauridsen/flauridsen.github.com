@@ -102,11 +102,11 @@ var MapsLib = {
     var whereClause = MapsLib.locationColumn + " not equal to ''";
 
     //-----custom filters-------
-    var type_column = "'Tilgængelighed'";
-    var tempWhereClause = [];
-    if ( $("#cbType1").is(':checked')) tempWhereClause.push("Offentlig");
-    if ( $("#cbType2").is(':checked')) tempWhereClause.push("Kun for ansatte");
-    whereClause += " AND " + type_column + " IN ('" + tempWhereClause.join('ed590116136c03404bbb96b98415c11d6990cb04#39;,ed590116136c03404bbb96b98415c11d6990cb04#39;') + "')";
+    var type_column = "adgang";
+    var searchType = type_column + " IN (-1,";
+    if ( $("#cbType1").is(':checked')) searchType = "1,";
+    if ( $("#cbType2").is(':checked')) searchType = "2,";
+    whereClause += " AND " + searchType.slice(0, searchType.length - 1) + ")";
 
 
     //-------end of custom filters--------
